@@ -1,5 +1,37 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production Build & Dist
+dist/
+dist-ssr/
+build/
+.cache/
+
+# Vercel & Deployment Cache
+.vercel/
+
+# Assignment Submission Reports & Scratch Notes (keep local only)
+*REPORT*.md
+*SUBMISSION*.md
+WEEK_5_SUBMISSION_REPORT.md
+scratch/
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +39,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# Editor & OS Metadata
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
