@@ -53,3 +53,5 @@ Thumbs.db
 # Temporary Files
 *.tmp
 *.temp
+.vercel
+.env*
