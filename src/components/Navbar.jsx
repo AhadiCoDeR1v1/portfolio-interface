@@ -6,7 +6,7 @@ export default function Navbar({ profile }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "case-studies", "technical-profile", "peer-review", "contact"];
+      const sections = ["home", "case-studies", "technical-profile", "certifications", "peer-review", "contact"];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
@@ -52,7 +52,7 @@ export default function Navbar({ profile }) {
             href="#home"
             className="navbar-brand"
             onClick={(e) => handleNavClick(e, "home")}
-            aria-label="Ahad Iqbal Home"
+            aria-label="Ahad Iqbal Portfolio"
           >
             <div className="monogram-badge">{profile.monogram || "AI."}</div>
             <div className="brand-meta">
@@ -88,7 +88,16 @@ export default function Navbar({ profile }) {
                   className={`nav-link ${activeSection === "technical-profile" ? "active" : ""}`}
                   onClick={(e) => handleNavClick(e, "technical-profile")}
                 >
-                  Technical Profile
+                  Skills Matrix
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#certifications"
+                  className={`nav-link ${activeSection === "certifications" ? "active" : ""}`}
+                  onClick={(e) => handleNavClick(e, "certifications")}
+                >
+                  Certifications
                 </a>
               </li>
               <li>
@@ -156,7 +165,14 @@ export default function Navbar({ profile }) {
             className={`nav-link ${activeSection === "technical-profile" ? "active" : ""}`}
             onClick={(e) => handleNavClick(e, "technical-profile")}
           >
-            Technical Profile
+            Skills Matrix
+          </a>
+          <a
+            href="#certifications"
+            className={`nav-link ${activeSection === "certifications" ? "active" : ""}`}
+            onClick={(e) => handleNavClick(e, "certifications")}
+          >
+            Certifications & Education
           </a>
           <a
             href="#contact"

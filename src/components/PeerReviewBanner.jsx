@@ -7,7 +7,7 @@ export default function PeerReviewBanner({ peerReview }) {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px", marginBottom: "16px" }}>
             <div className="peer-review-tag-badge">
               <span className="status-dot"></span>
-              <span>Beta Release / Review Mode</span>
+              <span>Systems Engineering Peer Audit</span>
             </div>
             <span className="badge-stack" style={{ borderColor: "rgba(37, 99, 235, 0.4)", color: "#93c5fd" }}>
               Sign-Off: {peerReview.version} • {peerReview.date}

@@ -34,7 +34,7 @@ export default function Footer({ profile }) {
                 {profile.name} — {profile.title}
               </div>
               <div className="footer-copy">
-                Identity Kit v0.9 • High-Throughput Asynchronous Systems
+                {profile.education} • {profile.location}
               </div>
             </div>
           </div>
@@ -52,7 +52,12 @@ export default function Footer({ profile }) {
             </li>
             <li>
               <a href="#technical-profile" className="footer-link" onClick={(e) => handleNavClick(e, "technical-profile")}>
-                Technical Profile
+                Skills Matrix
+              </a>
+            </li>
+            <li>
+              <a href="#certifications" className="footer-link" onClick={(e) => handleNavClick(e, "certifications")}>
+                Certifications
               </a>
             </li>
             <li>
@@ -68,6 +73,16 @@ export default function Footer({ profile }) {
                 className="footer-link"
               >
                 GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href={profile.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                LinkedIn
               </a>
             </li>
           </ul>

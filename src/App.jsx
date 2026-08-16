@@ -3,13 +3,14 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CaseStudies from "./components/CaseStudies";
 import SkillsMatrix from "./components/SkillsMatrix";
+import Certifications from "./components/Certifications";
 import PeerReviewBanner from "./components/PeerReviewBanner";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import "./styles/components.css";
 
 export default function App() {
-  const { profile, caseStudies, skillsMatrix, peerReview } = portfolioData;
+  const { profile, education, certifications, caseStudies, skillsMatrix, peerReview } = portfolioData;
 
   return (
     <div className="app-container">
@@ -21,16 +22,19 @@ export default function App() {
         {/* 1. Hero Section */}
         <Hero profile={profile} />
 
-        {/* 2. Case Studies Section */}
+        {/* 2. Featured Engineering Case Studies (5 Projects) */}
         <CaseStudies caseStudies={caseStudies} />
 
-        {/* 3. Technical Profile / Skills Matrix */}
+        {/* 3. Technical Profile & Skills Matrix */}
         <SkillsMatrix matrix={skillsMatrix} />
 
-        {/* 4. Peer Review / Review Mode Banner */}
+        {/* 4. Education & Verified Certifications Track */}
+        <Certifications education={education} certifications={certifications} />
+
+        {/* 5. Peer Engineering Audit Banner */}
         <PeerReviewBanner peerReview={peerReview} />
 
-        {/* 5. Contact Section */}
+        {/* 6. Contact & Direct Transmission Section */}
         <ContactSection profile={profile} />
       </main>
 

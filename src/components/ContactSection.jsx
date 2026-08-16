@@ -31,11 +31,11 @@ export default function ContactSection({ profile }) {
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            <span>Initiate Transmission</span>
+            <span>Direct Transmission</span>
           </div>
-          <h2 className="section-title">Contact & Communication</h2>
+          <h2 className="section-title">Contact & Professional Network</h2>
           <p className="section-subtitle">
-            Open for technical discussions on distributed systems, asynchronous execution pipelines, and backend engineering roles.
+            Open for technical discussions on distributed systems, high-throughput microservices, concurrency bottlenecks, and backend engineering opportunities.
           </p>
         </div>
 
@@ -43,8 +43,8 @@ export default function ContactSection({ profile }) {
           {/* Direct Channels Left Column */}
           <div className="contact-info-panel">
             <div>
-              <p style={{ fontSize: "1rem", lineHeight: 1.6, color: "#cbd5e1", marginBottom: "24px" }}>
-                Whether you need low-latency trading infrastructure, high-concurrency microservice design, or database optimization, feel free to reach out directly.
+              <p style={{ fontSize: "1rem", lineHeight: 1.6, color: "#cbd5e1", marginBottom: "20px" }}>
+                Based in <strong>{profile.location}</strong>. Actively seeking Backend Engineering, Systems Programming, and High-Throughput Microservices roles.
               </p>
 
               <div className="direct-channels-list">
@@ -122,7 +122,7 @@ export default function ContactSection({ profile }) {
                     </div>
                     <div>
                       <div className="channel-label">Professional Network</div>
-                      <div className="channel-val">linkedin.com/in/ahad-iqbal</div>
+                      <div className="channel-val">linkedin.com/in/ahad-iqbal-70a496292</div>
                     </div>
                   </div>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--text-secondary)" }}>
@@ -140,7 +140,7 @@ export default function ContactSection({ profile }) {
             <h3 className="form-title">Send Direct Dispatch</h3>
             {submitted ? (
               <div className="form-success-banner">
-                <strong>✓ Dispatch Sent:</strong> Thank you! Your message has been routed. You can also contact me directly at {profile.email}.
+                <strong>✓ Dispatch Sent:</strong> Thank you! Your transmission has been routed. You can also reach me directly at {profile.email}.
               </div>
             ) : (
               <form onSubmit={handleFormSubmit}>
@@ -150,7 +150,7 @@ export default function ContactSection({ profile }) {
                     id="contact-name"
                     type="text"
                     required
-                    placeholder="e.g. Lead Architect"
+                    placeholder="e.g. Hiring Manager / Lead Architect"
                     className="form-input"
                     value={formState.name}
                     onChange={(e) => setFormState({ ...formState, name: e.target.value })}
@@ -175,7 +175,7 @@ export default function ContactSection({ profile }) {
                   <textarea
                     id="contact-message"
                     required
-                    placeholder="Describe your throughput requirements, latency targets, or engineering role..."
+                    placeholder="Describe your microservice requirements, latency targets, or engineering role..."
                     className="form-textarea"
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
