@@ -12,7 +12,7 @@ export const portfolioData = {
     bioDetail:
       "Specialized in low-latency backend architectures, distributed transaction safety, and machine learning pipelines. Experienced in eliminating concurrency bottlenecks, pessimistic database locking under checkout surges, and building fault-tolerant microservices.",
     githubUrl: "https://github.com/AhadiCoDeR1v1",
-    linkedinUrl: "https://linkedin.com/in/ahad-iqbal-70a496292",
+    linkedinUrl: "https://www.linkedin.com/in/ahad-iqbal-70a496292",
     email: "ahadparhar@gmail.com",
     stats: [
       { label: "Execution Latency", value: "<85ms", detail: "Sub-second tick-to-order pipeline" },
