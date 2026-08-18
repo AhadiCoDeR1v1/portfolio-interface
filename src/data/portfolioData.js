@@ -126,6 +126,14 @@ export const portfolioData = {
         "High-throughput, event-driven Spring Boot 3.3 microservice orchestrating concurrent checkout operations with zero overselling, Redis caching, and RabbitMQ async processing.",
       impact:
         "Eliminated inventory race conditions under simulated high-concurrency checkouts using pessimistic row-level locking. Achieved <20ms p95 latency on product catalog queries.",
+      metrics: [
+        { label: "p95 Latency", value: "<20ms" },
+        { label: "Locking Strategy", value: "Pessimistic Write" },
+        { label: "Fault Tolerance", value: "Resilience4j" },
+        { label: "Integration Tests", value: "Testcontainers" }
+      ],
+      architecture:
+        "Event-driven microservice using Spring Boot 3.3, Redis cache-aside reads, row-level pessimistic locking on PostgreSQL, and RabbitMQ async order decoupled queues.",
       stack: [
         "Java 21",
         "Spring Boot 3.3",
@@ -181,6 +189,14 @@ public class OrderService {
         "Autonomous ReAct tool-calling agent operating a Linux workstation via natural language, featuring dynamic cloud/local LLM routing and a sub-0.01s deterministic security gate.",
       impact:
         "Intercepts destructive shell commands (sudo, rm -rf, fork bombs) in under 0.01s before any LLM call. Unified routing between cloud Gemini and local Ollama.",
+      metrics: [
+        { label: "Security Intercept", value: "<0.01s" },
+        { label: "LLM Routing", value: "Gemini & Ollama" },
+        { label: "Framework", value: "ReAct Loop" },
+        { label: "System Telemetry", value: "psutil Live" }
+      ],
+      architecture:
+        "Autonomous ReAct agent loop translating natural language into native Linux tools, routed via LiteLLM to local Ollama or cloud Gemini with a sub-0.01s deterministic regex safety barrier.",
       stack: [
         "Python",
         "LiteLLM",
@@ -224,6 +240,14 @@ public class OrderService {
         "High-performance C++17 connection pool synchronizing concurrent resource acquisition across multi-threaded workloads with zero memory leaks and starvation avoidance.",
       impact:
         "Coordinated 8 concurrent worker threads under high-frequency workloads with 0 deadlocks and 0 memory leaks across 100k test iterations (verified with Valgrind & Helgrind).",
+      metrics: [
+        { label: "Worker Threads", value: "8 Threads" },
+        { label: "Deadlocks", value: "0 Deadlocks" },
+        { label: "Memory Leaks", value: "0 Leaks" },
+        { label: "Acquisition", value: "FIFO Policy" }
+      ],
+      architecture:
+        "C++17 multi-threaded connection manager using POSIX semaphores for capacity counting, std::mutex for queue protection, and RAII ConnectionGuard wrappers.",
       stack: [
         "C++17",
         "POSIX Threads (pthreads)",
@@ -264,6 +288,14 @@ public:
         "Automated quantitative trading engine executing live tick analysis, 5/8 EMA momentum scalping on Gold, and currency correlation hedging via MetaTrader 5 API.",
       impact:
         "Logged 340+ live paper trades with sub-85ms tick-to-order execution latency and dynamic trailing stop-loss risk management.",
+      metrics: [
+        { label: "Execution Latency", value: "<85ms" },
+        { label: "Trades Logged", value: "340+ Live" },
+        { label: "Strategy Rule", value: "5/8 EMA Cross" },
+        { label: "Risk Control", value: "Trailing ATR" }
+      ],
+      architecture:
+        "Vectorized Python trading bot connected to MetaTrader 5 API streaming real-time market ticks, executing 5/8 EMA momentum scalping and correlation hedging.",
       stack: [
         "Python",
         "MetaTrader 5 API",
@@ -303,6 +335,14 @@ public:
         "End-to-end machine learning system scraping real estate data across Islamabad, engineering features, and serving valuations via a Flask web application.",
       impact:
         "Benchmarked 5 regression algorithms across thousands of scraped listings; Gradient Boosting achieved top accuracy (R² ≈ 0.56) on real-world property valuation.",
+      metrics: [
+        { label: "Top Accuracy", value: "R² ≈ 0.56" },
+        { label: "Model Type", value: "Gradient Boosting" },
+        { label: "Scraper", value: "Selenium & BS4" },
+        { label: "Serving Engine", value: "Flask REST" }
+      ],
+      architecture:
+        "End-to-end ML pipeline with Selenium property scraping, feature normalization, one-hot location encoding, Gradient Boosting regression, and Flask REST deployment.",
       stack: [
         "Python",
         "Scikit-learn",
@@ -383,7 +423,15 @@ public:
     reviewerName: "Irtza Alyas",
     reviewerRole: "Peer Systems & Backend Engineer",
     date: "August 2026",
+    quote:
+      "Ahad demonstrates exceptional low-latency backend systems architecture, pessimistic concurrency safety, and autonomous AI engineering.",
     statusBadge: "Reviewed by peer systems engineer (Irtza Alyas)",
+    reviewNotes: [
+      "Verified pessimistic row-level locking architecture eliminating overselling in Spring Boot microservices.",
+      "Audited C++17 POSIX connection pool with zero deadlocks and zero memory leaks under 100k Valgrind iterations.",
+      "Validated Project GIGI autonomous ReAct tool loop and sub-0.01s regex security gate.",
+      "Tested sub-85ms MetaTrader 5 execution and currency correlation hedging logic."
+    ],
     highlights: [
       "Verified pessimistic row-level locking architecture eliminating overselling in Spring Boot microservices.",
       "Audited C++17 POSIX connection pool with zero deadlocks and zero memory leaks under 100k Valgrind iterations.",

@@ -92,14 +92,16 @@ export default function CaseStudies({ caseStudies }) {
                 <p className="case-summary">{study.summary}</p>
 
                 {/* Key Metrics Preview */}
-                <div className="case-metrics-preview">
-                  {study.metrics.slice(0, 2).map((metric, idx) => (
-                    <div key={idx}>
-                      <div className="metric-pill-label">{metric.label}</div>
-                      <div className="metric-pill-val">{metric.value}</div>
-                    </div>
-                  ))}
-                </div>
+                {study.metrics && study.metrics.length > 0 && (
+                  <div className="case-metrics-preview">
+                    {study.metrics.slice(0, 2).map((metric, idx) => (
+                      <div key={idx}>
+                        <div className="metric-pill-label">{metric.label}</div>
+                        <div className="metric-pill-val">{metric.value}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* Stack Badges */}
                 <div className="case-stack-list">
