@@ -6,6 +6,7 @@ import SkillsMatrix from "./components/SkillsMatrix";
 import Certifications from "./components/Certifications";
 import PeerReviewBanner from "./components/PeerReviewBanner";
 import ContactSection from "./components/ContactSection";
+import PersonalAgent from "./components/PersonalAgent";
 import Footer from "./components/Footer";
 import "./styles/components.css";
 
@@ -37,6 +38,9 @@ export default function App() {
         {/* 6. Contact & Direct Transmission Section */}
         <ContactSection profile={profile} />
       </main>
+
+      {/* Interactive Personal AI Engineering Agent (Week 6 Capstone) */}
+      <PersonalAgent profile={profile} />
 
       {/* Footer */}
       <Footer profile={profile} />
