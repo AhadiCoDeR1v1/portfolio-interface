@@ -18,7 +18,7 @@ export default function CaseStudies({ caseStudies }) {
     if (filter === "Enterprise") return study.category.includes("Enterprise");
     if (filter === "Systems") return study.category.includes("Systems");
     if (filter === "Quant") return study.category.includes("Quantitative");
-    if (filter === "ML") return study.category.includes("Machine Learning") || study.category.includes("FlyRank");
+    if (filter === "ML") return study.category.includes("Machine Learning") || study.category.includes("FlyRank") || study.category.includes("Autonomous") || study.category.includes("AI");
     return true;
   });
 

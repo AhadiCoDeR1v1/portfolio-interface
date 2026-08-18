@@ -105,18 +105,20 @@ export default function SkillsMatrix({ matrix }) {
               </div>
 
               <div className="skill-items-list">
-                {categoryGroup.skills.map((skill, sIdx) => (
+                {(categoryGroup.skills || []).map((skill, sIdx) => (
                   <div key={sIdx} className="skill-item-row">
                     <div className="skill-left">
                       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                         <span className="skill-name">{skill.name}</span>
                         <span style={{ fontSize: "0.6875rem", color: "var(--accent-hover)", fontFamily: "var(--font-mono)" }}>
-                          [{skill.level}]
+                          [{skill.level || "Proficient"}]
                         </span>
                       </div>
-                      <span className="skill-detail">{skill.detail}</span>
+                      <span className="skill-detail">{skill.desc || skill.detail}</span>
                     </div>
-                    <span className="skill-tag-badge">{skill.tag}</span>
+                    {(skill.tag || skill.level) && (
+                      <span className="skill-tag-badge">{skill.tag || skill.level}</span>
+                    )}
                   </div>
                 ))}
               </div>
