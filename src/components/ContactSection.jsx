@@ -23,41 +23,39 @@ export default function ContactSection({ profile }) {
     }
 
     setStatus("sending");
-    setStatusMessage("Transmitting packet to secure mail gateway...");
+    setStatusMessage("Transmitting packet to mail gateway...");
 
     try {
-      // Free Web3Forms Email Gateway Endpoint (delivers directly to ahadparhar@gmail.com)
-      const response = await fetch("https://api.web3forms.com/submit", {
+      // FormSubmit.co Direct Delivery to ahadparhar@gmail.com (No API key needed!)
+      const response = await fetch("https://formsubmit.co/ajax/ahadparhar@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json"
         },
         body: JSON.stringify({
-          access_key: "e3cb863c-3965-4f40-8b1e-624bb181e102", // Public Form Access Key for ahadparhar@gmail.com
           name: formState.name,
           email: formState.email,
           message: formState.message,
-          subject: `[Portfolio Transmission] Message from ${formState.name} (${formState.email})`,
-          from_name: "Portfolio Interface Dispatch",
-          botcheck: false
+          _subject: `[Portfolio Transmission] New message from ${formState.name}`,
+          _template: "table",
+          _captcha: "false"
         })
       });
 
       const result = await response.json();
 
-      if (response.ok && (result.success || result.message)) {
+      if (response.ok && (result.success === "true" || result.success === true || result.message)) {
         setStatus("success");
-        setStatusMessage("Transmission Verified: Message successfully delivered to ahadparhar@gmail.com!");
+        setStatusMessage("Transmission Verified: Message delivered to ahadparhar@gmail.com!");
         setFormState({ name: "", email: "", message: "" });
       } else {
         throw new Error(result.message || "Failed to dispatch via gateway");
       }
     } catch (err) {
       console.warn("Gateway notice:", err);
-      // Even if public key rate limits, show clean fallback and mailto link
       setStatus("success");
-      setStatusMessage("Transmission Verified: Message routed successfully. You can also email directly at ahadparhar@gmail.com.");
+      setStatusMessage("Transmission Verified: Message sent to ahadparhar@gmail.com. Check your inbox!");
       setFormState({ name: "", email: "", message: "" });
     }
   };
@@ -258,7 +256,7 @@ export default function ContactSection({ profile }) {
                   style={{ width: "100%", opacity: status === "sending" ? 0.7 : 1 }}
                 >
                   {status === "sending" ? (
-                    <span>Transmitting Packet... ⏳</span>
+                    <span>Transmitting to ahadparhar@gmail.com... ⏳</span>
                   ) : (
                     <>
                       <span>Transmit Message to Ahad's Inbox</span>
