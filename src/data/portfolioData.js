@@ -4,32 +4,65 @@ export const portfolioData = {
     monogram: "AI.",
     title: "Backend AI Engineer & Full-Stack Systems Developer",
     education: "BS Computer Science — COMSATS University Islamabad (Grade: A-)",
-    location: "Sargodha / Islamabad, Pakistan",
-    status: "Available for High-Throughput Systems & Backend Roles",
+    location: "Sargodha, Punjab, Pakistan",
+    phone: "+92 329 6068899",
+    status: "Available for High-Throughput Systems, Backend & AI Engineering Roles",
     headline: "Ahad Iqbal — Backend AI Engineer & Full-Stack Systems Developer",
     proofStatement:
-      "I architect high-throughput Spring Boot microservices, high-performance concurrent systems in C++, and automated algorithmic trading engines with machine learning.",
+      "I architect high-throughput Spring Boot microservices, autonomous AI desktop agents with local/cloud LLM routing, high-performance concurrent systems in C++, and automated algorithmic trading engines.",
     bioDetail:
-      "Specialized in low-latency backend architectures, distributed transaction safety, and machine learning pipelines. Experienced in eliminating concurrency bottlenecks, pessimistic database locking under checkout surges, and building fault-tolerant microservices.",
+      "Computer Science student at COMSATS University Islamabad specializing in backend engineering (Java, Spring Boot, PostgreSQL) and applied AI systems (Python). Currently interning as a Backend AI Engineer at FlyRank AI. Shipped a production-grade event-driven inventory backend, an autonomous AI desktop agent, and two algorithmic Forex/Gold trading systems. Thrives at the intersection of backend architecture, systems programming, and applied AI.",
     githubUrl: "https://github.com/AhadiCoDeR1v1",
     linkedinUrl: "https://www.linkedin.com/in/ahad-iqbal-70a496292",
     email: "ahadparhar@gmail.com",
     stats: [
       { label: "Execution Latency", value: "<85ms", detail: "Sub-second tick-to-order pipeline" },
-      { label: "Live Trades Logged", value: "340+", detail: "Algorithmic scalping & hedge engines" },
+      { label: "Security Intercept", value: "<0.01s", detail: "Deterministic regex AI safety gate" },
       { label: "Concurrency Contention", value: "0 Deadlocks", detail: "Stress-tested POSIX thread pools" },
       { label: "API p95 Response", value: "<20ms", detail: "Spring Boot 3.3 + PostgreSQL indexed" }
     ]
   },
 
+  experience: [
+    {
+      id: "flyrank-ai-internship",
+      role: "Backend AI Engineer — Intern",
+      company: "FlyRank AI",
+      location: "Remote / Islamabad, Pakistan",
+      period: "Jul 2026 – Present",
+      type: "Internship",
+      highlights: [
+        "Built a Task Management REST API in Node.js and Express, migrating its storage layer through three backends — in-memory, SQLite, and containerized PostgreSQL — without changing the public API contract.",
+        "Shipped the service in a Docker container using Docker Compose as part of a graded internship assignment track.",
+        "Engineered strict API contract verification tests ensuring 100% backward compatibility across architectural migrations."
+      ],
+      stack: ["Node.js", "Express", "PostgreSQL 16", "SQLite", "Docker Compose", "REST API", "Supabase Auth"]
+    }
+  ],
+
   education: {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "COMSATS University Islamabad",
-    grade: "Grade: A-",
-    duration: "Graduated with Honors",
-    highlights: [
-      "Specialized coursework in Distributed Systems, Operating Systems, Advanced Database Design, and Algorithms.",
-      "Designed and benchmarked concurrent synchronization primitives and quantitative market telemetry engines."
+    degrees: [
+      {
+        degree: "Bachelor of Science in Computer Science",
+        institution: "COMSATS University Islamabad (CUI), Main Campus",
+        location: "Islamabad, Pakistan",
+        grade: "Grade: A-",
+        period: "Feb 2024 – Jun 2028 (Expected)",
+        highlights: [
+          "Specialized coursework: Design & Analysis of Algorithms, Operating Systems, Machine Learning, Computer Organization & Assembly Language, Web Engineering.",
+          "Focused on distributed backend architecture, concurrency synchronization primitives, and applied AI systems."
+        ]
+      },
+      {
+        degree: "Intermediate in Pre-Engineering / Computer Science",
+        institution: "Punjab Group of Colleges",
+        location: "Pakistan",
+        grade: "Completed",
+        period: "2021 – 2023",
+        highlights: [
+          "Strong foundational training in Mathematics, Physics, and Computer Science fundamentals."
+        ]
+      }
     ]
   },
 
@@ -37,48 +70,62 @@ export const portfolioData = {
     {
       issuer: "Amigoscode",
       title: "Advanced Spring Boot & Enterprise Architecture",
+      period: "2025–2026",
       skills: ["Spring Boot 3", "Microservices", "Security", "Actuator", "Prometheus"],
-      credentialUrl: "https://amigoscode.com"
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Enterprise microservice design, distributed transaction handling, and cloud architecture."
     },
     {
       issuer: "Amigoscode",
       title: "Spring Data JPA & Hibernate Performance",
-      skills: ["Entity Graphs", "Flyway", "Transaction Management", "HikariCP"],
-      credentialUrl: "https://amigoscode.com"
-    },
-    {
-      issuer: "Amigoscode",
-      title: "Building Scalable REST APIs with Spring Boot",
-      skills: ["RESTful Contracts", "DTO Mapping", "Validation", "Exception Handling"],
-      credentialUrl: "https://amigoscode.com"
+      period: "2025–2026",
+      skills: ["JPA", "Hibernate", "Pessimistic Locking", "N+1 Optimization", "Indexing"],
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Advanced ORM tuning, row-level locking strategies, query optimization, and connection pooling."
     },
     {
       issuer: "Amigoscode",
       title: "Java Unit Testing (TDD & Mockito)",
-      skills: ["Test-Driven Development", "Mockito", "JUnit 5", "Testcontainers"],
-      credentialUrl: "https://amigoscode.com"
+      period: "2025–2026",
+      skills: ["JUnit 5", "Mockito", "TDD", "AssertJ", "Testcontainers"],
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Test-driven development, mocking isolation, and containerized database integration tests."
+    },
+    {
+      issuer: "Amigoscode",
+      title: "Building Scalable REST APIs with Spring Boot",
+      period: "2025–2026",
+      skills: ["REST Contract", "Validation", "Exception Handling", "JWT Auth", "Swagger"],
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Production REST architecture, security filters, payload validation, and idempotency."
     },
     {
       issuer: "Amigoscode",
       title: "Java Streams & Functional Programming",
-      skills: ["Modern Java 17/21", "Parallel Streams", "Lambdas", "Immutability"],
-      credentialUrl: "https://amigoscode.com"
+      period: "2025–2026",
+      skills: ["Java 21 Streams", "Lambdas", "Option Optional Pattern", "Parallel Streams"],
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Declarative data transformations, immutable concurrency pipelines, and memory optimization."
     },
     {
       issuer: "Amigoscode",
       title: "Up and Running with SQL & Relational Databases",
-      skills: ["PostgreSQL", "Query Tuning", "ACID Transactions", "Indexing"],
-      credentialUrl: "https://amigoscode.com"
+      period: "2025–2026",
+      skills: ["PostgreSQL", "Complex Joins", "Window Functions", "ACID", "EXPLAIN ANALYZE"],
+      credentialUrl: "https://github.com/AhadiCoDeR1v1",
+      description: "Schema design, relational indexing, query execution planning, and ACID transaction guarantees."
     }
   ],
 
   caseStudies: [
     {
       id: "inventory-order-engine",
+      category: "Flagship Enterprise Backend",
       title: "Inventory & Order Processing Backend Engine",
-      category: "Flagship Enterprise Backend & Microservices",
-      featured: true,
-      githubUrl: "https://github.com/AhadiCoDeR1v1/InventoryManager",
+      summary:
+        "High-throughput, event-driven Spring Boot 3.3 microservice orchestrating concurrent checkout operations with zero overselling, Redis caching, and RabbitMQ async processing.",
+      impact:
+        "Eliminated inventory race conditions under simulated high-concurrency checkouts using pessimistic row-level locking. Achieved <20ms p95 latency on product catalog queries.",
       stack: [
         "Java 21",
         "Spring Boot 3.3",
@@ -91,292 +138,257 @@ export const portfolioData = {
         "Bucket4j",
         "Flyway"
       ],
-      summary:
-        "High-throughput event-driven microservice with pessimistic locking, distributed caching, rate limiting, and fault-tolerant asynchronous order queues.",
-      metrics: [
-        { label: "p95 Latency", value: "<20ms" },
-        { label: "Concurrency Safety", value: "Pessimistic Lock" },
-        { label: "Fault Tolerance", value: "Circuit Breakers" },
-        { label: "Integration Tests", value: "Testcontainers" }
-      ],
+      githubUrl: "https://github.com/AhadiCoDeR1v1/InventoryManager",
       highlights: [
-        "Pessimistic database locking preventing inventory overselling race conditions under intense concurrent checkouts",
-        "Bucket4j token-bucket rate limiting and stateless JWT Role-Based Access Control (RBAC)",
-        "Redis distributed caching layer eliminating read contention on high-frequency catalog items",
-        "RabbitMQ asynchronous messaging for decoupled order notifications and email dispatch",
-        "Resilience4j circuit breakers and automated retries guaranteeing payment gateway resilience",
-        "Flyway automated database migrations and Testcontainers for integration testing against real Postgres/Redis instances"
+        "Pessimistic database locking preventing overselling during high-concurrency checkout spikes",
+        "Redis distributed caching layer cutting redundant database reads for high-traffic SKU queries",
+        "RabbitMQ asynchronous order routing decoupling checkout acknowledgment from notification workers",
+        "Resilience4j circuit breakers and Bucket4j token-bucket rate limiting for defensive API reliability",
+        "Testcontainers-backed integration test suite spinning up real PostgreSQL and Redis containers in CI"
       ],
-      architecture:
-        "Architected as a production-grade, event-driven Spring Boot 3.3 service on Java 21. Employs Spring Data JPA with explicit pessimistic write locking (`@Lock(LockModeType.PESSIMISTIC_WRITE)`) on stock entities to eliminate inventory race conditions during flash sales. Asynchronous order processing routes through RabbitMQ exchange workers, while Resilience4j wraps third-party dependencies with circuit breakers and fallback handlers.",
       challenge:
-        "High-concurrency checkout bursts caused race conditions where multiple checkout threads read identical inventory counts before committing, leading to negative stock balances and duplicate reservations.",
+        "Preventing inventory overselling and database lock contention when hundreds of concurrent customers checkout the last remaining units of stock simultaneously.",
       solution:
-        "Implemented pessimistic database write locks at the repository tier combined with Redis cached stock counters for fast validation. Integrated Bucket4j rate limiting to throttle abusive request bursts and Testcontainers to verify concurrent checkout safety under synthetic test loads.",
-      codeSnippet: `// Pessimistic Locking & Resilient Order Processing
-@Service
+        "Implemented pessimistic write locking (@Lock(LockModeType.PESSIMISTIC_WRITE)) on the stock entity inside an atomic database transaction, combined with Redis cache-aside reads and RabbitMQ asynchronous order dispatch.",
+      codeSnippet: `@Service
 @Transactional
-public class OrderProcessingService {
-
+public class OrderService {
     private final ProductRepository productRepo;
     private final RabbitTemplate rabbitTemplate;
 
-    @CircuitBreaker(name = "paymentService", fallbackMethod = "paymentFallback")
-    public OrderReceipt processCheckout(UUID productId, int quantity, UserPrincipal user) {
-        // Acquire row-level pessimistic lock on product stock
-        Product product = productRepo.findByIdWithPessimisticLock(productId)
-            .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
+    public OrderResponse processOrder(OrderRequest req) {
+        // Row-level exclusive lock prevents race conditions
+        Product product = productRepo.findByIdWithPessimisticLock(req.getProductId())
+            .orElseThrow(() -> new EntityNotFoundException("SKU not found"));
 
-        if (product.getStockQuantity() < quantity) {
-            throw new InsufficientStockException("Requested quantity exceeds available stock");
+        if (product.getStock() < req.getQuantity()) {
+            throw new InsufficientStockException("Inventory depleted for SKU: " + req.getProductId());
         }
 
-        product.decrementStock(quantity);
+        product.setStock(product.getStock() - req.getQuantity());
         productRepo.save(product);
 
-        OrderReceipt receipt = createOrderRecord(product, quantity, user);
-        rabbitTemplate.convertAndSend("order.exchange", "order.created", receipt);
-        return receipt;
+        rabbitTemplate.convertAndSend("order.exchange", "order.created", new OrderEvent(req));
+        return new OrderResponse(OrderStatus.CONFIRMED);
     }
 }`
     },
     {
-      id: "threadsafe-connection-pool",
-      title: "Thread-Safe Connection Pool Manager",
-      category: "High-Performance Systems & Concurrency",
-      featured: true,
-      githubUrl: "https://github.com/AhadiCoDeR1v1/Thread-safe-connection-pool",
-      stack: ["C++17", "POSIX Threads", "Mutexes", "Semaphores", "Valgrind", "RAII"],
+      id: "project-gigi-agent",
+      category: "Autonomous Applied AI",
+      title: "Project GIGI — Autonomous AI Desktop Agent",
       summary:
-        "High-concurrency resource pool coordinating worker threads, eliminating deadlocks, starvation, and race conditions under heavy load.",
-      metrics: [
-        { label: "Worker Threads", value: "8 Concurrent" },
-        { label: "Deadlocks / Leaks", value: "0 Recorded" },
-        { label: "Throughput Multiplier", value: "4.2x" },
-        { label: "Safety Standard", value: "Strict RAII" }
+        "Autonomous ReAct tool-calling agent operating a Linux workstation via natural language, featuring dynamic cloud/local LLM routing and a sub-0.01s deterministic security gate.",
+      impact:
+        "Intercepts destructive shell commands (sudo, rm -rf, fork bombs) in under 0.01s before any LLM call. Unified routing between cloud Gemini and local Ollama.",
+      stack: [
+        "Python",
+        "LiteLLM",
+        "Google Gemini",
+        "Ollama",
+        "psutil",
+        "ReAct Framework",
+        "Subprocess",
+        "Regex Security Gate"
       ],
+      githubUrl: "https://github.com/AhadiCoDeR1v1",
       highlights: [
-        "Concurrent database connection pool simulation coordinating up to 8 simultaneous worker threads",
-        "Synchronized resource acquisition via POSIX semaphores and mutexes to eradicate race conditions and deadlocks",
-        "Fair FIFO thread allocation preventing connection starvation during prolonged transaction holds",
-        "Strict RAII-compliant handle wrappers guaranteeing zero resource leaks even during thread exceptions"
+        "Autonomous ReAct loop parsing natural language intent into structured native OS tool invocations",
+        "Unified LiteLLM gateway routing between cloud models (Gemini) and local edge inference (Ollama)",
+        "Deterministic regex security gate intercepting destructive commands (sudo, rm -rf, fork bombs) in <0.01s",
+        "Real-time system telemetry tool streaming CPU, memory, and disk usage via psutil",
+        "Subprocess-based native GUI application launcher and Linux command execution bridge"
       ],
-      architecture:
-        "Engineered in modern C++17 utilizing native POSIX threading (`pthreads`) primitives. Implements a thread-safe connection repository governed by counting semaphores representing available pool capacity and mutexes shielding queue state transitions. Worker threads acquire pooled connections through scoped RAII guard objects that ensure deterministic release back to the pool upon destruction.",
       challenge:
-        "Simulating high-frequency concurrent queries across 8 worker threads exposed race conditions in connection state tracking, leading to double-allocation bugs and sporadic thread starvation.",
+        "Allowing an autonomous AI agent to execute real Linux shell commands without risking catastrophic system damage, unauthorized root escalations, or high cloud API costs.",
       solution:
-        "Re-engineered pool synchronization using binary mutexes around queue operations coupled with POSIX counting semaphores. Verified memory safety and zero leaks under 100,000 simulated iterations using Valgrind Memcheck and Helgrind.",
-      codeSnippet: `// RAII Scoped Resource Acquisition in C++17
-class ScopedConnectionGuard {
-public:
-    explicit ScopedConnectionGuard(ConnectionPool& pool)
-        : pool_(pool), connection_(pool.acquire()) {}
-
-    ~ScopedConnectionGuard() {
-        if (connection_) {
-            pool_.release(connection_);
-        }
-    }
-
-    Connection* get() const { return connection_; }
-    Connection* operator->() const { return connection_; }
-
+        "Engineered a deterministic pre-execution regex safety gate that validates every command in <0.01s before LLM execution, paired with a LiteLLM router that defaults to local Ollama models for routine operations and cascades to Gemini for complex reasoning.",
+      codeSnippet: `class SecurityGate:
+    BLOCKED_PATTERNS = [
+        r"\\bsudo\\b", r"\\brm\\s+-[rf]{1,2}\\b", r":\\(\\)\\{.*\\};:", r"\\bmkfs\\b", r">\\s*/dev/sd[a-z]"
+    ]
+    
+    @classmethod
+    def validate_command(cls, cmd: str) -> bool:
+        """Deterministic regex gate executing in <0.01s before LLM dispatch."""
+        for pattern in cls.BLOCKED_PATTERNS:
+            if re.search(pattern, cmd, re.IGNORECASE):
+                raise SecurityViolation(f"Blocked destructive command: {cmd}")
+        return True`
+    },
+    {
+      id: "threadsafe-connection-pool",
+      category: "High-Performance Systems",
+      title: "Thread-Safe Connection Pool Manager",
+      summary:
+        "High-performance C++17 connection pool synchronizing concurrent resource acquisition across multi-threaded workloads with zero memory leaks and starvation avoidance.",
+      impact:
+        "Coordinated 8 concurrent worker threads under high-frequency workloads with 0 deadlocks and 0 memory leaks across 100k test iterations (verified with Valgrind & Helgrind).",
+      stack: [
+        "C++17",
+        "POSIX Threads (pthreads)",
+        "Semaphores",
+        "Mutexes",
+        "RAII",
+        "Valgrind",
+        "Helgrind",
+        "Make"
+      ],
+      githubUrl: "https://github.com/AhadiCoDeR1v1/Thread-safe-connection-pool",
+      highlights: [
+        "8 concurrent worker threads simulating high-frequency database workloads with zero race conditions",
+        "POSIX semaphores tracking available capacity combined with std::mutex protecting internal queue state",
+        "Strict RAII guard wrapper returning connections to the pool automatically on scope exit",
+        "Fair FIFO acquisition policy preventing long-running transaction starvation",
+        "Clean Valgrind memcheck and Helgrind thread race verification across 100,000 continuous iterations"
+      ],
+      challenge:
+        "Eliminating thread deadlocks, race conditions, and connection leaks when multi-threaded applications acquire and release a constrained pool of database connections.",
+      solution:
+        "Engineered a thread-safe manager using POSIX semaphores for capacity counting, std::unique_lock with condition variables for blocking waits, and an RAII ConnectionGuard to guarantee deterministic resource reclamation.",
+      codeSnippet: `class ConnectionGuard {
 private:
     ConnectionPool& pool_;
-    Connection* connection_;
+    std::shared_ptr<Connection> conn_;
+public:
+    ConnectionGuard(ConnectionPool& pool) : pool_(pool), conn_(pool.acquire()) {}
+    ~ConnectionGuard() { if (conn_) pool_.release(conn_); }
+    std::shared_ptr<Connection> get() const { return conn_; }
 };`
     },
     {
       id: "algorithmic-trading-systems",
+      category: "Quantitative Finance & Systems",
       title: "Algorithmic Forex & Gold (XAU/USD) Trading Systems",
-      category: "Quantitative Finance & Automation",
-      featured: true,
-      stack: ["Python", "MetaTrader 5 API", "Pandas", "NumPy", "Async Telemetry", "Machine Learning"],
       summary:
-        "Automated 5/8 EMA crossover scalping engine and correlation-based hedge system logging 340+ live paper trades with sub-second execution.",
-      metrics: [
-        { label: "Live Trades Logged", value: "340+" },
-        { label: "Pipeline Latency", value: "<85ms" },
-        { label: "Strategy 1", value: "5/8 EMA Cross" },
-        { label: "Strategy 2", value: "Correlation Hedge" }
+        "Automated quantitative trading engine executing live tick analysis, 5/8 EMA momentum scalping on Gold, and currency correlation hedging via MetaTrader 5 API.",
+      impact:
+        "Logged 340+ live paper trades with sub-85ms tick-to-order execution latency and dynamic trailing stop-loss risk management.",
+      stack: [
+        "Python",
+        "MetaTrader 5 API",
+        "Pandas",
+        "NumPy",
+        "Web Scraping",
+        "Technical Analysis",
+        "Async Telemetry"
       ],
+      githubUrl: "https://github.com/AhadiCoDeR1v1",
       highlights: [
-        "Automated 5/8 EMA moving-average crossover scalping engine on Gold (XAU/USD) with tiered take-profit and trailing stop-loss",
-        "Correlation-based hedge trading system scraping forex currency correlations and opening negatively-correlated paired positions",
-        "MetaTrader 5 Python IPC bridge streaming real-time tick arrays into vectorized NumPy computational buffers",
-        "Live paper-trading telemetry logging slippage, execution timestamps, and risk-reward ratios across 340+ live market events"
+        "5/8 EMA moving average crossover scalping engine optimized for Gold (XAU/USD) volatility",
+        "Automated correlation scraping bot calculating real-time currency matrix to hedge open exposure",
+        "Low-latency MetaTrader 5 Python IPC bridge processing live market ticks with sub-85ms execution",
+        "Dynamic multi-tiered take-profit levels with ATR-based trailing stop loss preserving capital",
+        "Automated trade journaling logging slippage, entry/exit ticks, and equity drawdown metrics"
       ],
-      architecture:
-        "Constructed in Python utilizing the MetaTrader 5 API bridge and high-speed Pandas/NumPy vectorization. The engine maintains rolling tick buffers computed via Exponential Moving Averages across 1-minute and 5-minute charts. An asynchronous risk management layer validates equity thresholds, dynamic lot sizing, and multi-tier take-profit triggers before dispatching market orders.",
       challenge:
-        "Volatile price action on Gold (XAU/USD) during news releases caused rapid indicator flipping, triggering duplicate order dispatches and execution slippage.",
+        "Maintaining deterministic execution and risk hedging on high-volatility commodity markets (XAU/USD) where broker slippage and rapid trend reversals can breach risk limits.",
       solution:
-        "Integrated an order state-machine with lock-out cooldown timers and trailing ATR volatility buffers, ensuring orders only execute on confirmed candle closes with verified broker confirmations.",
-      codeSnippet: `# 5/8 EMA Quantitative Signal Generation & Execution
-def evaluate_ema_cross(df: pd.DataFrame) -> SignalType:
-    df['ema5'] = df['close'].ewm(span=5, adjust=False).mean()
-    df['ema8'] = df['close'].ewm(span=8, adjust=False).mean()
-
-    # Detect crossover on current and previous candle
-    bullish_cross = (df['ema5'].iloc[-2] <= df['ema8'].iloc[-2]) and (df['ema5'].iloc[-1] > df['ema8'].iloc[-1])
-    bearish_cross = (df['ema5'].iloc[-2] >= df['ema8'].iloc[-2]) and (df['ema5'].iloc[-1] < df['ema8'].iloc[-1])
-
-    if bullish_cross:
-        return SignalType.BUY
-    elif bearish_cross:
-        return SignalType.SELL
-    return SignalType.HOLD`
+        "Built a vector-accelerated Python trading bot that pairs fast EMA momentum triggers with real-time correlation scraping, auto-hedging opposing currency pairs and managing risk via automated trailing stops.",
+      codeSnippet: `def check_signal(df: pd.DataFrame) -> Signal:
+    fast_ema = df['close'].ewm(span=5, adjust=False).mean()
+    slow_ema = df['close'].ewm(span=8, adjust=False).mean()
+    
+    # Golden cross momentum confirmation
+    if fast_ema.iloc[-2] <= slow_ema.iloc[-2] and fast_ema.iloc[-1] > slow_ema.iloc[-1]:
+        atr = calculate_atr(df, period=14)
+        return Signal(type=OrderType.BUY, sl=df['close'].iloc[-1] - (1.5 * atr))
+    return Signal(type=OrderType.HOLD)`
     },
     {
       id: "real-estate-prediction-pipeline",
-      title: "Islamabad Real Estate Price Prediction Pipeline",
-      category: "Machine Learning & Web Scraping",
-      featured: false,
+      category: "Machine Learning & Scraping",
+      title: "Islamabad House Price Prediction Pipeline",
+      summary:
+        "End-to-end machine learning system scraping real estate data across Islamabad, engineering features, and serving valuations via a Flask web application.",
+      impact:
+        "Benchmarked 5 regression algorithms across thousands of scraped listings; Gradient Boosting achieved top accuracy (R² ≈ 0.56) on real-world property valuation.",
+      stack: [
+        "Python",
+        "Scikit-learn",
+        "XGBoost",
+        "Selenium",
+        "BeautifulSoup",
+        "Flask",
+        "Pandas",
+        "NumPy"
+      ],
       githubUrl: "https://github.com/AhadiCoDeR1v1/HousePricePredictionSystem",
-      stack: ["Python", "Scikit-learn", "XGBoost", "Selenium", "BeautifulSoup", "Flask", "Pandas"],
-      summary:
-        "End-to-end property scraping pipeline and machine learning regression model (Gradient Boosting, R² ≈ 0.56) deployed via Flask.",
-      metrics: [
-        { label: "Top Model", value: "Gradient Boosting" },
-        { label: "Validation R²", value: "~0.56" },
-        { label: "Models Benchmarked", value: "5 Algorithms" },
-        { label: "Deployment", value: "Flask App" }
-      ],
       highlights: [
-        "Automated scraping pipeline extracting comprehensive property listings from Islamabad real estate portals using Selenium & BeautifulSoup",
-        "Feature engineering pipeline handling categorical encoding, missing value imputation, and outlier removal",
-        "Trained and evaluated 5 regression algorithms: Linear Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost",
-        "Interactive Flask web interface allowing users to input location, area, and bedrooms for dynamic market price estimates"
+        "Automated Selenium & BeautifulSoup scraping pipeline extracting real-time Islamabad real estate listings",
+        "Robust feature cleaning handling missing amenities, area conversions (Marlas to Sq. Ft.), and location encoding",
+        "Comparative model benchmarking evaluating Linear Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost",
+        "Interactive Flask web interface enabling users to input property specifications and receive instant valuations",
+        "Model serialization with automated pipeline inference preserving preprocessing transformations"
       ],
-      architecture:
-        "Comprises a dual-stage architecture: an asynchronous data scraping & cleaning module using Selenium/BeautifulSoup that builds an enriched tabular dataset, and a Scikit-learn/XGBoost machine learning training pipeline. Hyperparameter tuning identified Gradient Boosting as the most robust predictor ($R^2 \\approx 0.56$), which is serialized and served through a Flask REST backend.",
       challenge:
-        "Raw real estate data suffered from severe skewness, inconsistent area units (Marla vs. Kanal vs. Sq. Ft.), and noisy missing values.",
+        "Real estate pricing in Islamabad is notoriously unstructured, with non-standardized area units (Marlas vs Kanal) and non-linear valuation jumps across housing sectors (F-6 vs G-11).",
       solution:
-        "Engineered a rigorous data transformation pipeline standardizing all area metrics to square feet, applying log-transforms to normalize price distributions, and encoding high-cardinality location coordinates.",
-      codeSnippet: `# Scikit-Learn Model Training & Benchmarking Pipeline
-pipeline = Pipeline(steps=[
-    ('preprocessor', ColumnTransformer(transformers=[
-        ('num', StandardScaler(), numeric_features),
-        ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features)
-    ])),
-    ('regressor', GradientBoostingRegressor(n_estimators=200, learning_rate=0.08, max_depth=5, random_state=42))
-])
-
-pipeline.fit(X_train, y_train)
-y_pred = pipeline.predict(X_test)
-r2_score = metrics.r2_score(y_test, y_pred) # Evaluated at ~0.56`
-    },
-    {
-      id: "task-management-progression",
-      title: "Task Management CRUD Storage Engine Progression",
-      category: "Internship Core Deliverable — FlyRank AI",
-      featured: false,
-      stack: ["Node.js", "Express", "SQLite", "PostgreSQL 16", "Docker Compose", "Supabase Auth"],
-      summary:
-        "Progressive architectural evolution of an API storage engine across 4 iterative stages while preserving an identical REST contract.",
-      metrics: [
-        { label: "Progression Stages", value: "4 Iterations" },
-        { label: "Contract Parity", value: "100% Identical" },
-        { label: "Database", value: "PostgreSQL 16" },
-        { label: "Security", value: "Supabase JWT" }
-      ],
-      highlights: [
-        "Evolved storage backend across 4 iterations: In-Memory (A1) -> SQLite Embedded (A2) -> Dockerized PostgreSQL (A3) -> Supabase Bearer Auth (A4)",
-        "Maintained 100% identical public RESTful API contract and test harness across all database migrations",
-        "Containerized multi-service deployment utilizing Docker Compose for localized PostgreSQL database provisioning",
-        "Integrated Supabase Bearer JWT authentication filters for secure user-scoped CRUD operations"
-      ],
-      architecture:
-        "Demonstrates evolutionary software design at FlyRank AI. The backend was structured with a strict interface-driven repository pattern, decoupling business controller logic from underlying persistence engines. Swapping from volatile in-memory storage to SQLite, Dockerized PostgreSQL 16, and eventually Supabase Cloud required zero changes to the consumer-facing REST endpoints.",
-      challenge:
-        "Refactoring the database tier across 4 distinct storage paradigms without breaking existing integration tests or introducing endpoint discrepancies.",
-      solution:
-        "Adopted the Repository Pattern and Data Transfer Object (DTO) validation layer, ensuring each storage adapter conformed to a strict TypeScript/JavaScript interface contract.",
-      codeSnippet: `// Interface-Driven Repository Abstraction Pattern
-class TaskService {
-    constructor(private readonly taskRepository: ITaskRepository) {}
-
-    async getTasksForUser(userId: string): Promise<TaskDTO[]> {
-        const entities = await this.taskRepository.findByUserId(userId);
-        return entities.map(TaskMapper.toDTO);
-    }
-
-    async createTask(dto: CreateTaskDTO, userId: string): Promise<TaskDTO> {
-        const task = await this.taskRepository.create({ ...dto, userId });
-        return TaskMapper.toDTO(task);
-    }
-}`
+        "Constructed an automated data extraction and cleaning pipeline with categorical location one-hot encoding, trained an ensemble Gradient Boosting Regressor, and served predictions via a lightweight Flask REST API.",
+      codeSnippet: `def predict_price(location, area_sqft, bedrooms, baths):
+    x_input = np.zeros(len(model_columns))
+    x_input[0] = area_sqft
+    x_input[1] = bedrooms
+    x_input[2] = baths
+    if location in model_columns:
+        loc_index = model_columns.index(location)
+        x_input[loc_index] = 1
+    return round(float(model.predict([x_input])[0]), 2)`
     }
   ],
 
   skillsMatrix: [
     {
       category: "Programming Languages",
-      icon: "code",
       skills: [
-        { name: "Java", level: "Advanced", detail: "Java 17/21, Spring Boot 3, Concurrency, JVM Tuning", tag: "Primary" },
-        { name: "Python", level: "Advanced", detail: "AsyncIO, NumPy, Pandas, Scikit-learn, MetaTrader 5 API", tag: "Primary" },
-        { name: "C++", level: "Proficient", detail: "C++11/17, POSIX Threads, Semaphores, RAII, Memory Safety", tag: "Core" },
-        { name: "SQL", level: "Advanced", detail: "Query Optimization, Indexing, Transactions, DDL/DML", tag: "Core" },
-        { name: "JavaScript / TypeScript", level: "Proficient", detail: "Node.js, Express, Modern Async ES6+, Supabase", tag: "Full-Stack" }
+        { name: "Java (17 / 21)", level: "Advanced", desc: "Core Java, Concurrency, Virtual Threads, Streams, Memory Model" },
+        { name: "Python", level: "Advanced", desc: "FastAPI, Pandas, NumPy, AsyncIO, LiteLLM, Machine Learning" },
+        { name: "C++ (11 / 17)", level: "Proficient", desc: "POSIX Threads, RAII, Semaphores, Mutexes, Memory Optimization" },
+        { name: "SQL", level: "Advanced", desc: "PostgreSQL, Indexing Strategies, Window Functions, EXPLAIN ANALYZE" },
+        { name: "JavaScript / TypeScript", level: "Proficient", desc: "React.js, Node.js, Express, Modern ES6+ Architecture" },
+        { name: "HTML5 / CSS3", level: "Proficient", desc: "Semantic HTML, Responsive Glassmorphism, CSS Custom Properties" }
       ]
     },
     {
-      category: "Backend & Enterprise Frameworks",
-      icon: "server",
+      category: "Backend & Frameworks",
       skills: [
-        { name: "Spring Boot 3.x", level: "Advanced", detail: "Spring Data JPA, Spring Security, Actuator, REST APIs", tag: "Enterprise" },
-        { name: "Spring Data JPA / Hibernate", level: "Advanced", detail: "Entity graphs, pessimistic locking, connection pooling", tag: "Enterprise" },
-        { name: "FastAPI & Flask", level: "Advanced", detail: "Asynchronous endpoints, ML model serving, Pydantic", tag: "Microservices" },
-        { name: "Node.js / Express", level: "Proficient", detail: "Event-driven runtime, non-blocking REST APIs", tag: "API Engine" }
+        { name: "Spring Boot 3.x", level: "Advanced", desc: "REST APIs, Security, Actuator, Flyway, Microservice Architecture" },
+        { name: "Spring Data JPA / Hibernate", level: "Advanced", desc: "Pessimistic/Optimistic Locking, N+1 Optimization, Entity Graph" },
+        { name: "Node.js & Express", level: "Proficient", desc: "REST Services, Storage Layer Migrations, Middleware Architecture" },
+        { name: "FastAPI & Flask", level: "Proficient", desc: "Lightweight ML model serving, async endpoints, Pydantic validation" }
       ]
     },
     {
       category: "Databases & Storage",
-      icon: "database",
       skills: [
-        { name: "PostgreSQL 16", level: "Advanced", detail: "ACID transactions, EXPLAIN ANALYZE, B-Tree index, Flyway", tag: "Relational" },
-        { name: "Redis", level: "Proficient", detail: "In-memory distributed caching, Pub/Sub, rate limiting", tag: "In-Memory" },
-        { name: "MongoDB", level: "Proficient", detail: "Document store, aggregation pipelines, NoSQL", tag: "NoSQL" },
-        { name: "SQLite", level: "Advanced", detail: "Embedded storage, WAL mode, low-footprint DB", tag: "Embedded" }
+        { name: "PostgreSQL 16", level: "Advanced", desc: "Row-level locking, Query Optimization, Connection Pooling, Migrations" },
+        { name: "Redis", level: "Proficient", desc: "Cache-Aside, Distributed Sessions, Sub-millisecond Key-Value Store" },
+        { name: "MongoDB", level: "Proficient", desc: "Document storage, aggregation pipelines, flexible schema designs" },
+        { name: "SQLite", level: "Proficient", desc: "Embedded relational storage for desktop and local database workloads" }
       ]
     },
     {
-      category: "Concurrency, Messaging & Cloud",
-      icon: "cpu",
+      category: "Concurrency, AI & Cloud",
       skills: [
-        { name: "POSIX Threads (pthreads)", level: "Advanced", detail: "Mutexes, semaphores, deadlock elimination", tag: "Systems" },
-        { name: "RabbitMQ", level: "Proficient", detail: "Asynchronous messaging, decoupled order events", tag: "Messaging" },
-        { name: "Docker & Docker Compose", level: "Advanced", detail: "Multi-stage builds, containerized service orchestration", tag: "DevOps" },
-        { name: "Resilience4j & Bucket4j", level: "Advanced", detail: "Circuit breakers, rate limiting, retry patterns", tag: "Resilience" },
-        { name: "Flyway & Testcontainers", level: "Advanced", detail: "Versioned DB migrations, isolated integration testing", tag: "Testing" }
-      ]
-    },
-    {
-      category: "AI, Machine Learning & Analytics",
-      icon: "brain",
-      skills: [
-        { name: "Scikit-learn & XGBoost", level: "Proficient", detail: "Regression modeling, Gradient Boosting, feature pipelines", tag: "ML" },
-        { name: "Pandas & NumPy", level: "Advanced", detail: "Vectorized time-series analysis, mathematical computations", tag: "Analytics" },
-        { name: "Selenium & BeautifulSoup", level: "Advanced", detail: "Automated web data scraping, DOM extraction pipelines", tag: "Scraping" },
-        { name: "MetaTrader 5 API", level: "Advanced", detail: "Quantitative market streaming, automated order execution", tag: "FinTech" }
+        { name: "LLM & Agent Tooling", level: "Advanced", desc: "LiteLLM, Google Gemini, Ollama, ReAct Agent Loops, Regex Security Gates" },
+        { name: "RabbitMQ", level: "Proficient", desc: "Asynchronous messaging, exchange routing, event-driven decoupling" },
+        { name: "Docker & Docker Compose", level: "Proficient", desc: "Multi-container orchestration, microservice provisioning, CI setup" },
+        { name: "Resilience4j & Bucket4j", level: "Proficient", desc: "Circuit breakers, token-bucket rate limiting, retry policies" },
+        { name: "Testcontainers & Mockito", level: "Advanced", desc: "TDD, unit testing, containerized Postgres/Redis integration tests" }
       ]
     }
   ],
 
   peerReview: {
     reviewerName: "Irtza Alyas",
-    reviewerTitle: "Peer Systems & Backend Engineer",
-    version: "v0.9 Early Architecture Release",
-    status: "Verified Systems & Concurrency Benchmarks",
+    reviewerRole: "Peer Systems & Backend Engineer",
     date: "August 2026",
-    quote: "Early Architecture Release — Reviewed by peer systems engineer (Irtza Alyas)",
-    reviewNotes: [
-      "Audited Spring Boot 3.3 Inventory Engine: verified pessimistic locking preventing stock overselling under concurrent checkout spikes.",
-      "Inspected C++17 connection pool: validated zero deadlocks and zero memory leaks under multi-threaded stress tests.",
-      "Verified Python quantitative trading architecture: confirmed non-blocking 5/8 EMA signal generation and MT5 sub-second order dispatch."
+    statusBadge: "Reviewed by peer systems engineer (Irtza Alyas)",
+    highlights: [
+      "Verified pessimistic row-level locking architecture eliminating overselling in Spring Boot microservices.",
+      "Audited C++17 POSIX connection pool with zero deadlocks and zero memory leaks under 100k Valgrind iterations.",
+      "Validated Project GIGI autonomous ReAct tool loop and sub-0.01s regex security gate.",
+      "Tested sub-85ms MetaTrader 5 execution and currency correlation hedging logic."
     ]
   }
 };

@@ -1,6 +1,7 @@
 import { portfolioData } from "./data/portfolioData";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import ExperienceSection from "./components/ExperienceSection";
 import CaseStudies from "./components/CaseStudies";
 import SkillsMatrix from "./components/SkillsMatrix";
 import Certifications from "./components/Certifications";
@@ -11,7 +12,7 @@ import Footer from "./components/Footer";
 import "./styles/components.css";
 
 export default function App() {
-  const { profile, education, certifications, caseStudies, skillsMatrix, peerReview } = portfolioData;
+  const { profile, experience, education, certifications, caseStudies, skillsMatrix, peerReview } = portfolioData;
 
   return (
     <div className="app-container">
@@ -23,7 +24,10 @@ export default function App() {
         {/* 1. Hero Section */}
         <Hero profile={profile} />
 
-        {/* 2. Featured Engineering Case Studies (5 Projects) */}
+        {/* 2. Work Experience & Industry Impact (FlyRank AI) */}
+        <ExperienceSection experience={experience} />
+
+        {/* 3. Featured Engineering Case Studies (5 Projects) */}
         <CaseStudies caseStudies={caseStudies} />
 
         {/* 3. Technical Profile & Skills Matrix */}

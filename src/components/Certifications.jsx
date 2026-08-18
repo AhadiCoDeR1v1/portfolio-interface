@@ -16,46 +16,50 @@ export default function Certifications({ education, certifications }) {
           </p>
         </div>
 
-        {/* Education Highlight Card */}
-        <div
-          style={{
-            backgroundColor: "var(--bg-surface)",
-            border: "1px solid var(--border-subtle)",
-            borderRadius: "var(--radius-lg)",
-            padding: "28px",
-            marginBottom: "32px",
-            boxShadow: "var(--shadow-md)"
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "12px", marginBottom: "12px" }}>
-            <div>
-              <div style={{ fontSize: "0.75rem", fontFamily: "var(--font-mono)", color: "var(--accent-hover)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "4px" }}>
-                Higher Education
+        {/* Education Timeline Cards */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px", marginBottom: "32px" }}>
+          {education.degrees.map((edu, idx) => (
+            <div
+              key={idx}
+              style={{
+                backgroundColor: "var(--bg-surface)",
+                border: "1px solid var(--border-subtle)",
+                borderRadius: "var(--radius-lg)",
+                padding: "24px 28px",
+                boxShadow: "var(--shadow-md)"
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "12px", marginBottom: "12px" }}>
+                <div>
+                  <div style={{ fontSize: "0.75rem", fontFamily: "var(--font-mono)", color: "var(--accent-hover)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "4px" }}>
+                    {idx === 0 ? "Undergraduate Degree" : "Intermediate / High School"}
+                  </div>
+                  <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--text-main)", margin: 0 }}>
+                    {edu.degree}
+                  </h3>
+                  <div style={{ fontSize: "0.9375rem", color: "#cbd5e1", marginTop: "4px", fontWeight: 500 }}>
+                    {edu.institution} {edu.location ? `• ${edu.location}` : ""}
+                  </div>
+                </div>
+                <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+                  <span className="badge-status">
+                    <span className="status-dot"></span>
+                    <span>{edu.grade}</span>
+                  </span>
+                  <span className="badge-stack">{edu.period}</span>
+                </div>
               </div>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--text-main)", margin: 0 }}>
-                {education.degree}
-              </h3>
-              <div style={{ fontSize: "0.9375rem", color: "#cbd5e1", marginTop: "4px", fontWeight: 500 }}>
-                {education.institution}
-              </div>
-            </div>
-            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-              <span className="badge-status">
-                <span className="status-dot"></span>
-                <span>{education.grade}</span>
-              </span>
-              <span className="badge-stack">{education.duration}</span>
-            </div>
-          </div>
 
-          <ul style={{ listStyle: "none", padding: 0, marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px" }}>
-            {education.highlights.map((item, idx) => (
-              <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.875rem", color: "var(--text-secondary)" }}>
-                <span style={{ color: "var(--accent-hover)", fontWeight: "bold" }}>▸</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+              <ul style={{ listStyle: "none", padding: 0, marginTop: "14px", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {edu.highlights.map((item, hIdx) => (
+                  <li key={hIdx} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.875rem", color: "var(--text-secondary)" }}>
+                    <span style={{ color: "var(--accent-hover)", fontWeight: "bold" }}>▸</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Certifications Grid */}

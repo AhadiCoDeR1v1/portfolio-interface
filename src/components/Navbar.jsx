@@ -6,7 +6,7 @@ export default function Navbar({ profile }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "case-studies", "technical-profile", "certifications", "peer-review", "contact"];
+      const sections = ["home", "experience", "case-studies", "technical-profile", "certifications", "peer-review", "contact"];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
@@ -71,6 +71,15 @@ export default function Navbar({ profile }) {
                   onClick={(e) => handleNavClick(e, "home")}
                 >
                   Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  className={`nav-link ${activeSection === "experience" ? "active" : ""}`}
+                  onClick={(e) => handleNavClick(e, "experience")}
+                >
+                  Experience
                 </a>
               </li>
               <li>
@@ -152,6 +161,13 @@ export default function Navbar({ profile }) {
             onClick={(e) => handleNavClick(e, "home")}
           >
             Home
+          </a>
+          <a
+            href="#experience"
+            className={`nav-link ${activeSection === "experience" ? "active" : ""}`}
+            onClick={(e) => handleNavClick(e, "experience")}
+          >
+            Experience
           </a>
           <a
             href="#case-studies"
