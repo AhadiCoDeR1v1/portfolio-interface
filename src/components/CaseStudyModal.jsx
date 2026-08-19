@@ -1,6 +1,15 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function CaseStudyModal({ caseStudy, onClose }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyCode = () => {
+    if (!caseStudy?.codeSnippet) return;
+    navigator.clipboard.writeText(caseStudy.codeSnippet);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
@@ -131,9 +140,31 @@ export default function CaseStudyModal({ caseStudy, onClose }) {
           {/* Production Code Snippet */}
           {caseStudy.codeSnippet && (
             <div>
-              <div className="modal-section-title">
-                <span className="indicator"></span>
-                Critical Implementation Snippet
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                <div className="modal-section-title" style={{ margin: 0 }}>
+                  <span className="indicator"></span>
+                  Critical Implementation Snippet
+                </div>
+                <button
+                  onClick={handleCopyCode}
+                  className="btn-secondary"
+                  style={{ padding: "4px 10px", fontSize: "0.75rem", display: "inline-flex", alignItems: "center", gap: "6px" }}
+                  aria-label="Copy code to clipboard"
+                >
+                  {copied ? (
+                    <>
+                      <span style={{ color: "var(--status-emerald)" }}>✓ Copied</span>
+                    </>
+                  ) : (
+                    <>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span>Copy Code</span>
+                    </>
+                  )}
+                </button>
               </div>
               <div className="code-block-container">
                 <pre>
