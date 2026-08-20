@@ -18,7 +18,15 @@ export default function ContactSection({ profile }) {
     e.preventDefault();
     if (!formState.name.trim() || !formState.email.trim() || !formState.message.trim()) {
       setStatus("error");
-      setStatusMessage("Please fill in all required fields.");
+      setStatusMessage("Please fill in all required fields (Name, Email, and Message).");
+      return;
+    }
+
+    // Strict Email Format Validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formState.email.trim())) {
+      setStatus("error");
+      setStatusMessage("Invalid email address. Please provide a valid email format (e.g., name@company.com).");
       return;
     }
 
