@@ -87,6 +87,32 @@ export default function Footer({ profile }) {
             </li>
           </ul>
 
+          {/* FlyRank AI Verified Graduate Badge */}
+          <div className="flyrank-graduate-badge-container">
+            <a
+              href="https://internship.flyrank.ai/intern/profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flyrank-graduate-badge"
+              title="View Verified FlyRank AI Internship Credentials"
+            >
+              <div className="badge-logo-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div className="badge-info">
+                <div className="badge-title-row">
+                  <span className="badge-org">FlyRank AI</span>
+                  <span className="badge-verify-pill">✓ Verified Graduate</span>
+                </div>
+                <div className="badge-track">General AI Fluency · Code: FL · 2026</div>
+              </div>
+            </a>
+          </div>
+
           <button onClick={scrollToTop} className="btn-back-to-top" aria-label="Scroll back to top">
             <span>Top</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
