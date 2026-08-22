@@ -7,8 +7,24 @@
 
 > **Live Production Platform**: [https://portfolio-interface-xi.vercel.app](https://portfolio-interface-xi.vercel.app)  
 > **Target Subdomain**: `ahad.flyrank.ai` $\to$ `cname.vercel-dns.com`  
+> **YouTube Video Demo**: [https://youtu.be/c7KZVY4UUEs](https://youtu.be/c7KZVY4UUEs?si=3HXt7ce2-fg__Npc)  
 > **GitHub Repository**: [https://github.com/AhadiCoDeR1v1/portfolio-interface](https://github.com/AhadiCoDeR1v1/portfolio-interface)  
 > **LinkedIn**: [linkedin.com/in/ahad-iqbal-70a496292](https://www.linkedin.com/in/ahad-iqbal-70a496292)
+
+---
+
+## 🤖 AI Transparency Statement (Framework Diligence)
+
+In accordance with the **General AI Fluency (FL)** framework standards, here is the transparent breakdown of where AI was involved in this project:
+
+* **What was built with AI (Pair Programming with Claude / Antigravity)**:
+  - Scaffolding the initial Vite 8 + React 19 single-page boilerplate and responsive glassmorphic CSS custom properties.
+  - Designing the client-side regex intent dictionary in `agentKnowledgeBase.js` covering 100+ recruiter prompt variations.
+  - Generating integration test scripts and automated SSR DOM rendering harnesses.
+* **What Ahad Iqbal Architected, Coded & Verified Personally**:
+  - The underlying backend systems architectures (Spring Boot 3.3 pessimistic locking microservice, C++17 POSIX thread synchronization, MetaTrader 5 algorithmic scalping rules, and Scikit-learn property valuation).
+  - The Node.js REST API storage migration at FlyRank AI (In-Memory $\to$ SQLite $\to$ PostgreSQL 16) with 100% REST contract parity.
+  - All verified benchmark numbers, latency metrics, and final system integration testing.
 
 ---
 
